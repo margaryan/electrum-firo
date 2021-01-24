@@ -33,12 +33,12 @@ from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import (QAbstractItemView, QHeaderView, QComboBox,
                              QLabel, QMenu)
 
-from electrum_dash.i18n import _
-from electrum_dash.transaction import PartialTxInput
-from electrum_dash.dash_ps import sort_utxos_by_ps_rounds
-from electrum_dash.dash_tx import PSCoinRounds
-from electrum_dash.logging import Logger
-from electrum_dash.util import profiler
+from electrum_firo.i18n import _
+from electrum_firo.transaction import PartialTxInput
+from electrum_firo.dash_ps import sort_utxos_by_ps_rounds
+from electrum_firo.dash_tx import PSCoinRounds
+from electrum_firo.logging import Logger
+from electrum_firo.util import profiler
 
 from .util import MyTreeView, ColorScheme, MONOSPACE_FONT, EnterButton, GetDataThread
 
