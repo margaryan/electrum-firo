@@ -2274,7 +2274,8 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, Logger):
         self.utxo_model.set_view(self.utxo_list)
         l.setObjectName("utxo_container")
         toolbar = l.create_toolbar(self.config)
-        toolbar_shown = bool(self.config.get('show_toolbar_utxos', True))
+        # toolbar_shown = bool(self.config.get('show_toolbar_utxos', True))
+        toolbar_shown = False
         l.show_toolbar(toolbar_shown)
         return self.create_list_tab(l, toolbar)
 
